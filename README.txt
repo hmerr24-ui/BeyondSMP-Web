@@ -1,31 +1,25 @@
-BEYOND SMP WEBSITE — V2
+BEYOND SMP WEBSITE — V3
 ========================
 
-This version adds a dedicated BEYOND SMP NETWORK section containing all
-current service/subdomain buttons in one place.
+CHANGES IN V3:
+- Factions are now actual clickable cards.
+- Paradis has its own information page.
+- Benders has its own information page with the four nations.
+- Titan Shifters has its own information page.
+- All current subdomains/services remain together in the Network section.
+- MAP IS NOT INCLUDED.
 
-CURRENT LINKS:
-- play.beyond-smp.com
-- discord.beyond-smp.com
-- events.beyond-smp.com
-- status.beyond-smp.com
+FILES:
+index.html
+style.css
+script.js
+pages/coming-soon.html
+pages/factions/paradis.html
+pages/factions/benders.html
+pages/factions/titan-shifters.html
 
-MAP IS NOT INCLUDED.
+GITHUB PAGES:
+Upload/replace the files in the repository root.
+Settings > Pages > Deploy from a branch > main > / (root).
 
-All service buttons currently lead to pages/coming-soon.html.
-
-GitHub Pages:
-1. Upload the files to the root of your repository.
-2. Settings > Pages.
-3. Source: Deploy from a branch.
-4. Branch: main.
-5. Folder: / (root).
-6. Save.
-
-The temporary GitHub Pages address will be:
-https://YOUR-USERNAME.github.io/beyond-smp/
-
-When beyond-smp.com is purchased later, use Repository > Settings > Pages >
-Custom domain and configure DNS at the domain provider.
-
-Do not add the map subdomain until you decide you want it.
+Do not add map.beyond-smp.com until you decide you want it.
