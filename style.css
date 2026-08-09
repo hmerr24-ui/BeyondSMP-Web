@@ -11,7 +11,6 @@
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -40,13 +39,23 @@ a { color: inherit; text-decoration: none; }
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
   font-family: Oswald, sans-serif;
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: .08em;
 }
 
-.brand span { color: var(--accent); }
+.brand b { color: var(--accent); }
+
+.site-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+}
 
 nav { display: flex; gap: 28px; }
 
@@ -116,12 +125,16 @@ h1 span { color: var(--accent); }
   font-size: .74rem;
   font-weight: 800;
   letter-spacing: .1em;
+  transition: transform .2s, background .2s;
 }
 
 .button:hover { transform: translateY(-2px); }
 
 .primary { background: var(--accent); color: #111; }
-.secondary { color: var(--text); }
+.primary:hover { background: #dfbf5d; }
+
+.secondary, .info-button { color: var(--text); }
+.secondary:hover, .info-button:hover { background: rgba(201,168,76,.1); }
 
 .hero-mark {
   position: absolute;
@@ -173,7 +186,7 @@ h1 span { color: var(--accent); }
   transform: translateY(-4px);
 }
 
-.card-number {
+.card-number, .network-card > span, .choice-card > span, .world-item > span {
   color: var(--accent);
   font-size: .72rem;
   font-weight: 900;
@@ -228,12 +241,6 @@ h1 span { color: var(--accent); }
   transform: translateY(-3px);
 }
 
-.network-card > span {
-  color: var(--accent);
-  font-size: .72rem;
-  font-weight: 900;
-}
-
 .network-card h3 {
   font-size: 1.8rem;
   margin-bottom: 5px;
@@ -245,12 +252,88 @@ h1 span { color: var(--accent); }
   font-family: monospace;
 }
 
-.network-card b {
+.network-card b, .choice-card b {
   display: block;
   color: var(--accent);
   font-size: .63rem;
   letter-spacing: .1em;
   margin-top: 9px;
+}
+
+.choice-page, .content-page {
+  min-height: calc(100vh - 72px);
+  padding: 85px 10vw;
+}
+
+.choice-inner, .content-inner {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.choice-page h1, .content-page h1 {
+  margin-bottom: 25px;
+}
+
+.choice-intro { margin-bottom: 42px; }
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 38px;
+}
+
+.choice-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 32px;
+  min-height: 230px;
+  transition: border-color .2s, transform .2s, background .2s;
+}
+
+.choice-card:hover {
+  border-color: var(--accent);
+  background: var(--panel-hover);
+  transform: translateY(-4px);
+}
+
+.choice-card h2 {
+  font-size: 2.5rem;
+  margin: 55px 0 12px;
+}
+
+.choice-card p {
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.content-block {
+  border-top: 1px solid var(--line);
+  padding: 27px 0;
+  max-width: 800px;
+}
+
+.content-block h2, .world-item h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.content-block p, .world-item p {
+  color: var(--muted);
+  font-size: .94rem;
+}
+
+.world-list {
+  margin: 35px 0 40px;
+}
+
+.world-item {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 18px;
+  border-top: 1px solid var(--line);
+  padding: 28px 0;
+  max-width: 850px;
 }
 
 footer {
@@ -259,6 +342,7 @@ footer {
   justify-content: space-between;
   color: var(--muted);
   font-size: .72rem;
+  border-top: 1px solid var(--line);
 }
 
 footer strong { color: var(--text); letter-spacing: .1em; }
@@ -290,24 +374,11 @@ footer strong { color: var(--text); letter-spacing: .1em; }
 }
 
 @media (max-width: 800px) {
-  .navbar {
-    padding: 16px 6vw;
-    height: auto;
-  }
-
-  .hero {
-    min-height: 560px;
-    padding: 70px 7vw;
-  }
-
-  .hero-mark {
-    right: -30px;
-    font-size: 21rem;
-  }
-
-  .section { padding: 70px 7vw; }
-
-  .cards, .network-grid { grid-template-columns: 1fr; }
-
+  .navbar { padding: 16px 6vw; height: auto; }
+  .hero { min-height: 560px; padding: 70px 7vw; }
+  .hero-mark { right: -30px; font-size: 21rem; }
+  .section, .choice-page, .content-page { padding: 70px 7vw; }
+  .cards, .network-grid, .choice-grid { grid-template-columns: 1fr; }
+  .brand-text { display: none; }
   footer { flex-direction: column; gap: 8px; }
 }

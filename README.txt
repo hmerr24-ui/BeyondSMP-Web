@@ -1,26 +1,17 @@
-BEYOND SMP WEBSITE — V4
+BEYOND SMP WEBSITE — V5
 
-V4 changes:
-- Shorter homepage with only Hero, Factions and Network sections.
-- Removed the extra About and World sections to reduce scrolling.
-- Faction cards now open root-level coming-soon pages.
-- Play, Discord, Events and Status also have root-level coming-soon pages.
-- File structure intentionally matches the user's current GitHub repository.
+NEW:
+- Added logo support.
+- The HTML expects your real logo to be named logo.png and placed in the repository root.
+- Added an INFO & WORLD button beside Explore Factions and Network.
+- INFO & WORLD opens a separate page with two choices: ABOUT and THE WORLD.
+- Added actual About and World pages.
+- Kept the homepage compact with only Hero, Factions and Network.
+- Kept all faction/network pages as root-level pages to match the current GitHub repository.
 - MAP IS NOT INCLUDED.
 
-IMPORTANT:
-Upload/replace ALL of these files in the repository ROOT:
-index.html
-style.css
-script.js
-paradis.html
-benders.html
-titan-shifters.html
-play.html
-discord.html
-events.html
-status.html
+LOGO:
+Replace the included placeholder logo.png with your real Beyond SMP logo.
+Keep the exact filename: logo.png
 
-Do not put these HTML files inside another folder.
-
-After committing, GitHub Pages may take a short time to redeploy.
+FILES GO IN THE REPOSITORY ROOT.
