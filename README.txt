@@ -1,20 +1,11 @@
-BEYOND SMP WEBSITE — V5
+Beyond SMP Main Website — V9
 
-NEW:
-- Added logo support.
-- The HTML expects your real logo to be named logo.png and placed in the repository root.
-- Added an INFO & WORLD button beside Explore Factions and Network.
-- INFO & WORLD opens a separate page with two choices: ABOUT and THE WORLD.
-- Added actual About and World pages.
-- Kept the homepage compact with only Hero, Factions and Network.
-- Kept all faction/network pages as root-level pages to match the current GitHub repository.
-- MAP IS NOT INCLUDED.
-
-LOGO:
-The included logo.png is the official Beyond SMP logo supplied for this version.
-Keep the exact filename: logo.png
-
-FILES GO IN THE REPOSITORY ROOT.
-
-V7 CHANGE:
-- Added Info & World to the top navigation alongside Factions and Network.
+Important:
+- The homepage file MUST be named exactly: index.html
+- Keep style.css and logo.png in the same folder as index.html.
+- Current live network links:
+  - https://beyond-smp.com
+  - https://discord.beyond-smp.com
+  - https://events.beyond-smp.com
+- play.beyond-smp.com and status.beyond-smp.com remain Coming Soon placeholders.
+- map.beyond-smp.com is intentionally NOT included yet.
