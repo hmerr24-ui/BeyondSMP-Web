@@ -1,47 +1,31 @@
-BEYOND SMP WEBSITE
-==================
+BEYOND SMP WEBSITE — V2
+========================
 
-This is the first static version of the Beyond SMP website.
+This version adds a dedicated BEYOND SMP NETWORK section containing all
+current service/subdomain buttons in one place.
 
-Files:
-- index.html          Main website
-- style.css           Website styling
-- script.js           JavaScript
-- pages/              Temporary sub-pages
+CURRENT LINKS:
+- play.beyond-smp.com
+- discord.beyond-smp.com
+- events.beyond-smp.com
+- status.beyond-smp.com
 
-IMPORTANT:
-The website currently does NOT include map.beyond-smp.com.
+MAP IS NOT INCLUDED.
 
-The buttons for Play, Discord, Events and Status currently lead to
-temporary "Coming Soon" pages.
+All service buttons currently lead to pages/coming-soon.html.
 
-GITHUB PAGES SETUP
-==================
+GitHub Pages:
+1. Upload the files to the root of your repository.
+2. Settings > Pages.
+3. Source: Deploy from a branch.
+4. Branch: main.
+5. Folder: / (root).
+6. Save.
 
-1. Create a new GitHub repository.
-   Suggested name: beyond-smp
+The temporary GitHub Pages address will be:
+https://YOUR-USERNAME.github.io/beyond-smp/
 
-2. Upload ALL files and folders from this project.
-
-3. On GitHub, open:
-   Settings > Pages
-
-4. Under "Build and deployment":
-   Source: Deploy from a branch
-   Branch: main
-   Folder: / (root)
-
-5. Save.
-
-GitHub will give you a github.io address.
-
-CUSTOM DOMAIN (LATER)
-=====================
-
-Once you buy beyond-smp.com, configure the custom domain in:
-
-Repository > Settings > Pages > Custom domain
-
-DNS records will need to be configured with your domain provider.
+When beyond-smp.com is purchased later, use Repository > Settings > Pages >
+Custom domain and configure DNS at the domain provider.
 
 Do not add the map subdomain until you decide you want it.
