@@ -1,25 +1,26 @@
-BEYOND SMP WEBSITE — V3
-========================
+BEYOND SMP WEBSITE — V4
 
-CHANGES IN V3:
-- Factions are now actual clickable cards.
-- Paradis has its own information page.
-- Benders has its own information page with the four nations.
-- Titan Shifters has its own information page.
-- All current subdomains/services remain together in the Network section.
+V4 changes:
+- Shorter homepage with only Hero, Factions and Network sections.
+- Removed the extra About and World sections to reduce scrolling.
+- Faction cards now open root-level coming-soon pages.
+- Play, Discord, Events and Status also have root-level coming-soon pages.
+- File structure intentionally matches the user's current GitHub repository.
 - MAP IS NOT INCLUDED.
 
-FILES:
+IMPORTANT:
+Upload/replace ALL of these files in the repository ROOT:
 index.html
 style.css
 script.js
-pages/coming-soon.html
-pages/factions/paradis.html
-pages/factions/benders.html
-pages/factions/titan-shifters.html
+paradis.html
+benders.html
+titan-shifters.html
+play.html
+discord.html
+events.html
+status.html
 
-GITHUB PAGES:
-Upload/replace the files in the repository root.
-Settings > Pages > Deploy from a branch > main > / (root).
+Do not put these HTML files inside another folder.
 
-Do not add map.beyond-smp.com until you decide you want it.
+After committing, GitHub Pages may take a short time to redeploy.
