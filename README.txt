@@ -11,7 +11,7 @@ NEW:
 - MAP IS NOT INCLUDED.
 
 LOGO:
-Replace the included placeholder logo.png with your real Beyond SMP logo.
+The included logo.png is the official Beyond SMP logo supplied for this version.
 Keep the exact filename: logo.png
 
 FILES GO IN THE REPOSITORY ROOT.
