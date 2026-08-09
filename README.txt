@@ -15,3 +15,6 @@ The included logo.png is the official Beyond SMP logo supplied for this version.
 Keep the exact filename: logo.png
 
 FILES GO IN THE REPOSITORY ROOT.
+
+V7 CHANGE:
+- Added Info & World to the top navigation alongside Factions and Network.
