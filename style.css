@@ -383,17 +383,133 @@ footer strong { color: var(--text); letter-spacing: .1em; }
   footer { flex-direction: column; gap: 8px; }
 }
 
-.network-home-button{margin-top:30px}
-.network-page{min-height:calc(100vh - 72px);padding:85px 10vw}
-.network-inner{max-width:950px;margin:0 auto}
-.network-page h1{margin-bottom:22px}
-.network-page-intro{max-width:720px;color:var(--muted);margin-bottom:42px}
-.network-list{display:flex;flex-direction:column;gap:12px}
-.network-list-card{display:grid;grid-template-columns:45px 1fr auto;align-items:center;gap:20px;padding:22px 25px;background:var(--panel);border:1px solid var(--line);transition:border-color .2s,transform .2s,background .2s}
-.network-list-card:hover{border-color:var(--accent);background:var(--panel-hover);transform:translateX(4px)}
-.network-list-number{color:var(--accent);font-size:.72rem;font-weight:900}
-.network-list-card h2{font-size:1.75rem;margin-bottom:3px}
-.network-list-card p{color:var(--muted);font-size:.75rem;font-family:monospace}
-.network-list-card b{color:var(--accent);font-size:.63rem;letter-spacing:.1em;white-space:nowrap}
-.network-back{margin-top:32px}
-@media(max-width:800px){.network-page{padding:70px 7vw}.network-list-card{grid-template-columns:35px 1fr;gap:15px}.network-list-card b{grid-column:2}}
+
+.network-home-button {
+  margin-top: 30px;
+}
+
+.network-page {
+  min-height: calc(100vh - 72px);
+  padding: 85px 10vw;
+}
+
+.network-inner {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.network-page h1 {
+  margin-bottom: 22px;
+}
+
+.network-page-intro {
+  max-width: 720px;
+  color: var(--muted);
+  margin-bottom: 42px;
+}
+
+.network-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.network-list-card {
+  display: grid;
+  grid-template-columns: 45px 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 25px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  transition: border-color .2s, transform .2s, background .2s;
+}
+
+.network-list-card:hover {
+  border-color: var(--accent);
+  background: var(--panel-hover);
+  transform: translateX(4px);
+}
+
+.network-list-number {
+  color: var(--accent);
+  font-size: .72rem;
+  font-weight: 900;
+}
+
+.network-list-card h2 {
+  font-size: 1.75rem;
+  margin-bottom: 3px;
+}
+
+.network-list-card p {
+  color: var(--muted);
+  font-size: .75rem;
+  font-family: monospace;
+}
+
+.network-list-card b {
+  color: var(--accent);
+  font-size: .63rem;
+  letter-spacing: .1em;
+  white-space: nowrap;
+}
+
+.network-back {
+  margin-top: 32px;
+}
+
+@media (max-width: 800px) {
+  .network-page { padding: 70px 7vw; }
+  .network-list-card {
+    grid-template-columns: 35px 1fr;
+    gap: 15px;
+  }
+  .network-list-card b {
+    grid-column: 2;
+  }
+}
+
+
+/* === Beyond SMP Network-wide shape rework ===
+   Rounded rectangular components to match the Events / Help / Applications sites.
+*/
+.button,
+.card,
+.feature,
+.next,
+.empty,
+.network-list-card,
+.meta,
+.filters input,
+.filters select,
+.panel,
+.status,
+.tag,
+.quick-card,
+.faction-card,
+.info-card,
+.hero-card {
+  border-radius: 10px;
+}
+
+.button,
+.card,
+.feature,
+.next,
+.empty,
+.network-list-card,
+.meta,
+.panel,
+.quick-card,
+.faction-card,
+.info-card,
+.hero-card {
+  overflow: hidden;
+}
+
+/* Keep pills genuinely pill-shaped where appropriate. */
+.status,
+.tag {
+  border-radius: 99px;
+}
